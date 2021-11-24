@@ -10,6 +10,7 @@ export default function ArticleList({title , category}){
     console.log('data' , data)
     return(
         <div className="container">
+        
             <h1>{title}</h1>
 
             <ul className="list-unstyled">

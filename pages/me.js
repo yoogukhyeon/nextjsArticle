@@ -24,6 +24,19 @@ export default function me(){
         router.push('/')
     }, [])
 
+    
+    const rrr = profile.created_at;
+    const date = new Date(rrr);
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const hour = date.getHours();
+    const min = date.getMinutes();
+    const sec = date.getSeconds();
+    let userDate = year + '-' + month + '-' + day + " " + hour + ' : ' + min 
+ 
+   
+
     return <Layout>
         <div className="container">
             <dl>
@@ -32,9 +45,9 @@ export default function me(){
                 <dt>이름</dt>
                 <dd>{profile.name}</dd>
                 <dt>가입일시</dt>
-                <dd>{profile.created_at}</dd>
+                <dd>{userDate}</dd>
             </dl>
-
+        
 
             <button className="btn btn-danger" onClick={logout}>로그아웃</button>
         </div>
