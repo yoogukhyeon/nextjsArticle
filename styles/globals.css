@@ -6,8 +6,9 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
+a , a.btn {
   color: inherit;
+  color: black;
   text-decoration: none;
 }
 
